@@ -31,7 +31,6 @@ function createPoisons() {
     poisonCreate(450, 375, 'poison');
     poisonCreate(375, 475, 'poison');
     poisonCreate(215, 300, 'poison');
-
 }
 
 
@@ -69,7 +68,7 @@ function starCollect(player, star) {
 
 function poisonCollect(player, poison) {
     poison.kill();
-    lives = lives - 1;
+    lives = lives - 3;
     if (lives === 0) {
         player.kill();
         gameOver = true;
