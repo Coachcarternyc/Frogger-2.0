@@ -12,7 +12,7 @@ var finalMessage;
 var won = false;
 var gameOver = false;
 var currentScore = 0;
-var lives = 3;
+var lives = 1;
 var winningScore = 60;
 
 function createStars() {
@@ -68,7 +68,7 @@ function starCollect(player, star) {
 
 function poisonCollect(player, poison) {
     poison.kill();
-    lives = lives - 3;
+    lives = lives - 1;
     if (lives === 0) {
         player.kill();
         gameOver = true;
